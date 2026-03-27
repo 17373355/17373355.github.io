@@ -7,119 +7,164 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="hero">
-                <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                    <div>
-                        <img src="img/rx2.jpg" alt="Ruoxi Guo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid white;">
+    <div class="sidebar">
+        <img src="img/rx.jpg" alt="Ruoxi Guo" class="profile-image">
+        <div class="sidebar-name">Ruoxi Guo</div>
+        <div class="sidebar-subtitle">Ph.D. Student in Computer Graphics & Vision</div>
+        <div class="sidebar-contact">
+            <div class="sidebar-contact-item">
+                <span>📧</span>
+                <a href="mailto:ruoxiguo@126.com" style="color: white;">ruoxiguo@126.com</a>
+            </div>
+            <div class="sidebar-contact-item">
+                <span>🎓</span>
+                <span>ruoxiguo@zju.edu.cn</span>
+            </div>
+            <div class="sidebar-contact-item">
+                <span>🔗</span>
+                <a href="https://www.researchgate.net/profile/Ruoxi-Guo-2" style="color: white;">ResearchGate</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about">
+                    <p>I am a Ph.D. student at Zhejiang University's State Key Laboratory of CAD & Computer Graphics, specializing in 3D human motion generation and computer vision. 
+                        My research focuses on realistic 3D human motion synthesis and human behaviour intelligence.</p>
+                    <p>I've graduated from Beihang University with a major in computer science and technology. Then I obtained a degree in computer graphics from University College London (M.Sc. with Distinction). In 2024, I've joined 3D Vision group in Zhejiang University, supervised by Prof. Xiaowei Zhou, Sida Peng, and Hujun Bao.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="container">
+                <h2 class="section-title">Research Projects</h2>
+                <div class="research-grid">
+                    <!-- CVPR 2026 -->
+                    <div class="research-card">
+                        <div class="research-image">
+                            <div>Mocap-2-to-3 Image</div>
+                        </div>
+                        <div class="research-content">
+                            <h3>Mocap-2-to-3</h3>
+                            <div class="research-meta">
+                                <strong>CVPR 2026 (Accepted)</strong>
+                            </div>
+                            <p><strong>Authors:</strong> Zhumei Wang, Zechen Hu, <strong>Ruoxi Guo</strong>, Huaijin Pi, Ziyong Feng, Liang Zhang, Mingtao Pei, Siyuan Huang</p>
+                            <div class="research-description">
+                                <p>Multi-view lifting for monocular motion recovery with 2D pretraining. Novel approach for 3D motion capture data generation from sparse 2D inputs.</p>
+                            </div>
+                            <div class="research-links">
+                                <a href="https://wangzhumei.github.io/mocap-2-to-3/" target="_blank">🌐 Project Website</a>
+                                <a href="https://arxiv.org/abs/2503.03222" target="_blank">📄 arXiv Paper</a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h1>Ruoxi Guo</h1>
-                        <div class="subtitle">Ph.D. Candidate in Computer Graphics & Vision</div>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <span>📧</span>
-                                <a href="mailto:ruoxiguo@126.com">ruoxiguo@126.com</a>
+
+                    <!-- ICCV 2025 -->
+                    <div class="research-card">
+                        <div class="research-image">
+                            <div>Motion-2-to-3 Image</div>
+                        </div>
+                        <div class="research-content">
+                            <h3>Motion-2-to-3</h3>
+                            <div class="research-meta">
+                                <strong>ICCV 2025 (Accepted)</strong>
                             </div>
-                            <div class="contact-item">
-                                <span>🎓</span>
-                                <span>ruoxiguo@zju.edu.cn</span>
+                            <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Huaijin Pi, Zehong Shen, Qing Shuai, Zechen Hu, Zhumei Wang, Yajiao Dong, Ruizhen Hu, Taku Komura, Sida Peng, Xiaowei Zhou</p>
+                            <div class="research-description">
+                                <p>Leveraging 2D motion data for 3D motion generation. Achieved SOTA results with 15% improvement in motion quality metrics.</p>
                             </div>
-                            <div class="contact-item">
-                                <span>🔗</span>
-                                <a href="https://www.researchgate.net/profile/Ruoxi-Guo-2">ResearchGate</a>
+                            <div class="research-links">
+                                <a href="https://zju3dv.github.io/Motion-2-to-3/" target="_blank">🌐 Project Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IEEE VR 2023 -->
+                    <div class="research-card">
+                        <div class="research-image">
+                            <div>User Motion Accentuation Image</div>
+                        </div>
+                        <div class="research-content">
+                            <h3>User Motion Accentuation in Social Pointing Scenario</h3>
+                            <div class="research-meta">
+                                <strong>IEEE VR 2023 Poster</strong>
+                            </div>
+                            <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Lisa Izzouzi, Anthony Steed</p>
+                            <div class="research-description">
+                                <p>Real-time full-body motion generation from sparse tracking data. Achieved 92% user satisfaction in social VR scenarios.</p>
+                            </div>
+                            <div class="research-links">
+                                <a href="https://ieeexplore.ieee.org/document/10108661" target="_blank">📄 IEEE Paper</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IEEE VR 2021 -->
+                    <div class="research-card">
+                        <div class="research-image">
+                            <div>Hand-by-Hand Mentor Image</div>
+                        </div>
+                        <div class="research-content">
+                            <h3>Hand-by-Hand Mentor</h3>
+                            <div class="research-meta">
+                                <strong>IEEE VR 2021 Poster</strong>
+                            </div>
+                            <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Jiahao Cui, Wanru Zhao, Shuai Li, Aimin Hao</p>
+                            <div class="research-description">
+                                <p>AR-based piano training system with automatic gesture generation. Improved user accuracy by 85% in musical performance.</p>
+                            </div>
+                            <div class="research-links">
+                                <a href="https://ieeexplore.ieee.org/document/9419239/" target="_blank">📄 IEEE Paper</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about">
-                <p>I am a Ph.D. candidate at Zhejiang University's State Key Laboratory of CAD & Computer Graphics, specializing in 3D human motion generation and computer vision. My research focuses on leveraging diffusion models and 2D motion priors for realistic 3D human motion synthesis.</p>
-                <p>With a background in computer graphics from University College London (M.Sc. with Distinction) and Beihang University, I have published multiple papers at top conferences including ICCV and IEEE VR.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="research">
-        <div class="container">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3>Motion-2-to-3</h3>
-                    <p><strong>ICCV 2025 (Accepted)</strong></p>
-                    <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Zhumei Wang, Xiaohan Wang, Yebin Liu</p>
-                    <p>Transformer-based diffusion model for text-to-3D human motion generation using 2D video priors. Achieved SOTA results with 15% improvement in motion quality metrics.</p>
-                    <p><a href="https://zju3dv.github.io/Motion-2-to-3/" target="_blank">🌐 Project Website</a></p>
-                </div>
-                <div class="research-card">
-                    <h3>Mocap-2-to-3</h3>
-                    <p><strong>CVPR 2026 (Submitted)</strong></p>
-                    <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Zhumei Wang, Xiaohan Wang, Yebin Liu</p>
-                    <p>Novel approach for 3D motion capture data generation from sparse 2D inputs using diffusion models and temporal consistency constraints.</p>
-                    <p><a href="https://wangzhumei.github.io/mocap-2-to-3/" target="_blank">🌐 Project Website</a></p>
-                </div>
-                <div class="research-card">
-                    <h3>User Motion Accentuation in Social Pointing Scenario</h3>
-                    <p><strong>IEEE VR 2023 Poster</strong></p>
-                    <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Yebin Liu, et al.</p>
-                    <p>Real-time full-body motion generation from sparse tracking data. Achieved 92% user satisfaction in social VR scenarios.</p>
-                    <p><a href="https://ieeexplore.ieee.org/document/10108661" target="_blank">📄 IEEE Paper</a></p>
-                </div>
-                <div class="research-card">
-                    <h3>Hand-by-Hand Mentor</h3>
-                    <p><strong>IEEE VR 2021 Poster</strong></p>
-                    <p><strong>Authors:</strong> <strong>Ruoxi Guo</strong>, Yebin Liu, et al.</p>
-                    <p>AR-based piano training system with automatic gesture generation. Improved user accuracy by 85% in musical performance.</p>
-                    <p><a href="https://ieeexplore.ieee.org/document/9419239/" target="_blank">📄 IEEE Paper</a></p>
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <ul class="skill-list">
+                            <li><strong>Proficient:</strong> Python, C++, LaTeX</li>
+                            <li><strong>Experienced:</strong> C#, Java, MATLAB, JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <ul class="skill-list">
+                            <li><strong>DL:</strong> PyTorch, TensorFlow</li>
+                            <li><strong>CG:</strong> OpenGL, Unity3D, Blender</li>
+                            <li><strong>Web:</strong> React, Node.js, Three.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Research Areas</h3>
+                        <ul class="skill-list">
+                            <li>3D Motion Generation</li>
+                            <li>Computer Vision</li>
+                            <li>Augmented Reality</li>
+                            <li>Diffusion Models</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <ul class="skill-list">
-                        <li><strong>Proficient:</strong> Python, C++, LaTeX</li>
-                        <li><strong>Experienced:</strong> C#, Java, MATLAB, JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <ul class="skill-list">
-                        <li><strong>DL:</strong> PyTorch, TensorFlow, Diffusers</li>
-                        <li><strong>CG:</strong> OpenGL, Unity3D, Blender</li>
-                        <li><strong>Web:</strong> React, Node.js, Three.js</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Research Areas</h3>
-                    <ul class="skill-list">
-                        <li>3D Motion Generation</li>
-                        <li>Computer Vision</li>
-                        <li>Augmented Reality</li>
-                        <li>Diffusion Models</li>
-                    </ul>
-                </div>
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Ruoxi Guo. All rights reserved.</p>
+                <p>Last updated: March 2026</p>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Ruoxi Guo. All rights reserved.</p>
-            <p>Last updated: March 2025</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

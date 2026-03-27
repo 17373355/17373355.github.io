@@ -18,23 +18,85 @@ body {
     line-height: 1.6;
     color: var(--dark-text);
     background: var(--light-bg);
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.sidebar-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.sidebar-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.main-content {
+    margin-left: 280px;
+    flex: 1;
+    padding: 2rem 0;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 header {
     background: var(--primary-color);
     color: white;
-    padding: 2rem 0;
+    padding: 0;
     text-align: center;
+    display: none;
 }
 
 .hero {
-    padding: 3rem 0;
+    padding: 0;
 }
 
 .hero h1 {
@@ -81,22 +143,74 @@ section {
 }
 
 .research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
 .research-card {
     background: white;
-    padding: 1.5rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-left: 6px solid var(--secondary-color);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.research-image {
+    flex: 0 0 200px;
+    height: 150px;
+    background: #f5f5f5;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-left: 4px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.research-content {
+    flex: 1;
 }
 
 .research-card h3 {
     color: var(--secondary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.research-meta {
+    margin-bottom: 1rem;
+    color: var(--light-text);
+}
+
+.research-description {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.research-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.research-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.research-links a:hover {
+    background: var(--primary-color);
+    color: white;
 }
 
 .skills-grid {
@@ -135,12 +249,38 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
+    body {
+        flex-direction: column;
     }
     
-    .contact-info {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .sidebar-name {
+        font-size: 1.5rem;
+    }
+    
+    .research-card {
         flex-direction: column;
-        align-items: center;
+        gap: 1rem;
+    }
+    
+    .research-image {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 120px;
     }
 }
